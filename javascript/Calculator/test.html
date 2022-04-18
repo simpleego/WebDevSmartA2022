@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const func = (msg) => {
+            return () => {
+                console.log(msg);
+            };
+        };
+
+        const innerFunc1 = func('0');
+        const innerFunc2 = func('1');
+        const innerFunc3 = func('2');
+        const innerFunc4 = func('3');
+        innerFunc3();
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

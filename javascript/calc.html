@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript DataType</title>
+
+    <script>
+        function calc(op){
+
+            let result = 0;
+            let num1 = parseInt(document.getElementById("num1").value);
+            let num2 = parseInt(document.getElementById("num2").value);
+
+            switch(op){
+                case '+':
+                    result = add(num1,num2);
+                    break;
+                case '-':
+                    result = sub(num1,num2);
+                    break;
+                case 'x':
+                    result = mul(num1,num2);
+                    break;
+                case '/':
+                    result = div(num1,num2);
+                    break;
+                default:
+                    break;
+            }
+
+            document.getElementById("result").value = result;
+        }
+        function add(num1, num2){           
+            return parseInt(num1) + parseInt(num2);		
+        } 
+        function sub(num1, num2){
+            return parseInt(num1) - parseInt(num2);	
+        } 
+
+        function mul(num1, num2){
+            return parseInt(num1)* parseInt(num2);		
+        } 
+        function div(num1, num2){
+            if(parseInt(num2) != 0){                
+                return parseInt(num1) / parseInt(num2);	
+            }
+            return 0;
+        } 
+    </script>
+    
+</head>
+
+<body>
+
+	<h1>숫자와 문자열의 덧셈</h1>
+    <form>
+        숫자 1: <input type="text" id="num1" value="10">
+        숫자 2: <input type="text" id="num2" value="20">
+        <input type="button" value="+" onclick="calc('+')" >
+        <input type="button" value="-" onclick="calc('-')" >
+        <input type="button" value="x" onclick="calc('*')" >
+        <input type="button" value="/" onclick="calc('/')" >
+        결과: <input type="text" id="result" value="0">
+    </form>	
+</body>
+
+
+</html>
