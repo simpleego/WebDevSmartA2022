@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            /*border: 1px solid #f00;*/
+        }
+        #wrap {
+            width: 1000px;
+            margin: 0px auto;
+            padding: 20px;
+            background-image: url("img/bg_intro.jpg");
+        }
+        #title_wrap{
+            width: 770px;
+            height: 200px;
+            margin: 0px auto;
+            margin-top: 80px;
+            /*background-image: url("img/title_bg.png");*/
+            background-color: rgb(98, 200, 78);
+            padding-left: 30px;
+            padding-top: 30px;
+        }
+        #title01 {
+            margin-left: 150px;
+        }
+        #title_wrap h1 {
+            font-size: 36px;
+            color: white;
+            font-weight: bold;
+        }
+        #title_wrap p {
+            margin-top: 32px;   
+            color: white;         
+        }
+        #localfood_wrap {
+            width: 800px;
+            padding-top: 20px;
+            padding-bottom: 30px; 
+            margin: 5px auto;
+            background-color: rgb(248, 250, 234);
+        }
+        #localfood_wrap h1{ 
+            margin-left: 16px;           
+            padding-bottom: 10px;
+        }
+
+        #special_wrap {
+            width: 800px;
+            margin: 5px auto;
+        }
+
+        h1{
+            font-size: 1.5em;
+            color: rgb(5, 25, 1);
+            font-weight: bolder;
+        }
+        #title{
+            position: absolute;
+            top:  0px;
+            left: 20px;
+            width: 721px;
+            padding: 20px;
+            background-color: rgba(1, 1, 59, 0.657);
+        }
+        #title li {
+            margin-left: 10px;
+            font-size: 18px;            
+            color: white;
+            text-align: left;
+        }
+        #img01{
+            position: relative;
+            text-align: center;
+        }  
+        #special_wrap{
+            width: 780px;
+            height: 480px;
+            padding: 10px;
+            margin: 0px  auto;
+            background-color: rgb(86, 159, 52);
+        }
+        #special_box h1{
+            color: rgb(18, 93, 3);
+        }
+        #special {
+            border-radius: 50%;
+            float:left;
+            margin-top: 60px;
+            margin-left: 10px;
+            border: 10px solid rgb(138, 247, 136);
+        }   
+        #special_box{
+            width: 400px;
+            float:left;
+            margin-right: 30px;
+            padding-bottom: 30px;
+        }    
+        #special_box ol{
+            margin-left: 16px;
+            padding-left: 12px;
+            font-size: 18px;
+            font-weight: bold;
+        }     
+        #special_box ul{
+            margin-left: 16;
+            padding-left: 12px;
+            font-size: 18px;
+            font-weight: bold;
+        } 
+
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/menu.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrap">
+        <ul id="menu">
+            <li><a href="intro.html">농부장터 소개</a></li>
+            <li><a href="local_food.html">직매장 운영</a></li>
+            <li><a href="local_food_operation.html">식당 운영</a></li>
+            <li><a href="network_business.html">네트워크 사업</a></li>
+            <li><a href="education_business.html">교육 사업</a></li>
+            <li><a href="member_join.html">조합원 정보</a></li>
+            <li><a href="history.html">농부장터 역사</a></li>
+            <li><a href="road_info.html">찾아오시는 길</a></li>
+        </ul>  
+        <div id="title_wrap">
+            <h1>생산자와 소비자가<br> <span id="title01">직접만나는 곳</span></h1>
+            <p>생산자와 소비자 간 마음의 거리는 줄이고<br>
+                관계를 쌓아가는 이곳은 농부장터 입니다.
+            </p>
+        </div>
+        <div id="special_wrap">
+            <div id="special_box">
+                <h1>■ 교육사업</h1>
+                <ol>
+                    <li>로컬푸드 전문인력양성 사업
+                        <ul>
+                            <li>경북 농민사관학교 청년로컬푸드 창업과정 운영</li>
+                        </ul>
+                    </li>
+                    <li>생상자출하자 교육
+                        <ul>
+                            <li>정기 생산자 출하자 교육
+                                <ul>
+                                    <li>잔류 농약 안전성 교육, 직매장 출하 교육,<br>
+                                        농업농촌현황 교육 등
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>신규 출하 농가 교육
+                                <ul>
+                                    <li>- 협동조합 기본교육 및 직매장 운영방법 교육
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>소비자교육
+                        <ul>
+                            <li>GMO 안전성 교육</li>
+                            <li>식생활 교육 및 체험 프로그램 진행</li>
+                        </ul>
+
+                    </li>
+                    <li>직원교육
+                        <ul>
+                            <li>로컬푸드 개념 및 커뮤니케이션 역량 강화 워크숍</li>
+                            <li>농수산 식품유통공사(aT)실시 교육 참여</li>
+                            
+                        </ul>
+
+                    </li>
+                </ol>
+            </div>
+            <img id="special" src="img/edu02.jpg" width="300" height="300">
+        </div>
+
+        <div id="localfood_wrap">
+            <h1>■ 농민장터사업</h1>
+            <div id="img01">
+                <img id="img02" src="img/edu01.jpg" width="95%">                
+                <ol id="title">
+                    <li>대!장!금!(대구 MBC에서 장보는 금요일) 
+                        <ul>
+                            <li> - 2016~현재 대구 MBC 팡마당 직거래 장터 운영</li>
+                        </ul>
+                    <li>직판행사
+                        <ul>
+                            <li> - 아파트 단지내 행사 박람회 등 가종 지역 출제 시 직거래 장터 운영</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        
+    </div>
+    
+</body>
+</html>

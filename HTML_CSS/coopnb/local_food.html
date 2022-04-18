@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            /*border: 1px solid #f00;*/
+        }
+        #wrap {
+            width: 1000px;
+            margin: 0px auto;
+            padding: 20px;
+            background-image: url("img/bg_intro.jpg");
+        }
+        #title_wrap{
+            width: 770px;
+            height: 200px;
+            margin: 0px auto;
+            margin-top: 80px;
+            /*background-image: url("img/title_bg.png");*/
+            background-color: rgb(98, 200, 78);
+            padding-left: 30px;
+            padding-top: 30px;
+        }
+        #title01 {
+            margin-left: 150px;
+        }
+        #title_wrap h1 {
+            font-size: 36px;
+            color: white;
+            font-weight: bold;
+        }
+        #title_wrap p {
+            margin-top: 32px;   
+            color: white;         
+        }
+        #localfood_wrap {
+            width: 800px;
+            padding-top: 20px;
+            padding-bottom: 30px; 
+            margin: 5px auto;
+            background-color: rgb(55, 170, 49);
+        }
+        #localfood_wrap h1{ 
+            margin-left: 76px;           
+            padding-bottom: 10px;
+        }
+
+        #special_wrap {
+            width: 800px;
+            margin: 5px auto;
+        }
+
+        h1{
+            font-size: 1.5em;
+            color: rgb(20, 94, 5);
+            font-weight: bolder;
+        }
+        #title{
+            position: absolute;
+            top:  0px;
+            left: 80px;
+            width: 600px;
+            padding: 20px;
+            background-color: rgba(5, 5, 86, 0.657);
+            list-style-type: none;
+        }
+        #title li {
+            margin-left: 10px;
+            font-size: 18px;            
+            color: white;
+            text-align: left;
+        }
+        #img01{
+            position: relative;
+            text-align: center;
+        }  
+        #special_wrap{
+            width: 760px;
+            height: 380px;
+            padding: 20px;
+            margin: 0px  auto;
+            background-color: blanchedalmond;
+        }
+
+        #special {
+            border-radius: 50%;
+            float:left;
+            margin-top: 60px;
+            margin-left: 10px;
+        }   
+        #special_box{
+            width: 350px;
+            float:left;
+            margin-right: 30px;
+            padding-bottom: 30px;
+        }    
+        #special_box ol{
+            margin-left: 16px;
+            padding-left: 32px;
+            font-size: 18px;
+            font-weight: bold;
+        }     
+        #special_box ul{
+            margin-left: 16;
+            padding-left: 32px;
+            font-size: 18px;
+            font-weight: bold;
+        } 
+
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/menu.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrap">
+        <ul id="menu">
+            <li><a href="intro.html">농부장터 소개</a></li>
+            <li><a href="local_food.html">직매장 운영</a></li>
+            <li><a href="local_food_operation.html">식당 운영</a></li>
+            <li><a href="network_business.html">네트워크 사업</a></li>
+            <li><a href="education_business.html">교육 사업</a></li>
+            <li><a href="member_join.html">조합원 정보</a></li>
+            <li><a href="history.html">농부장터 역사</a></li>
+            <li><a href="road_info.html">찾아오시는 길</a></li>
+        </ul>  
+        <div id="title_wrap">
+            <h1>생산자와 소비자가<br> <span id="title01">직접만나는 곳</span></h1>
+            <p>생산자와 소비자 간 마음의 거리는 줄이고<br>
+                관계를 쌓아가는 이곳은 농부장터 입니다.
+            </p>
+        </div>
+        <div id="localfood_wrap">
+            <h1>■ 로컬푸드 직매장 운영</h1>
+            <div id="img01">
+                <img id="img02" src="img/localfood.jpg" width="95%">                
+                <ul id="title">
+                    <li>☞ 지역에서 재배하는 농산물을 지역에서 
+                        소비할 수 있도록 돕습니다.</li>
+                    <li>☞ 직거래사업으로 소비자와 생산자가
+                        서로 소통하고 관계할 수 있는 얼굴 있는 먹거리를 추구합니다.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="special_wrap">
+            <div id="special_box">
+                <h1>■ 특판 사업</h1>
+                <ol>
+                    <li>출하농가 특판(목요장터)
+                        <ul>
+                            <li>직매장 앞 제철 농산물 시식 및 판매</li>
+                        </ul>
+                    </li>
+                    <li>공동구매사업
+                        <ul>
+                            <li>조합원 및 사회적경제 조직과 협력하여 농산물
+                                공동 구매 사업 추진
+                            </li>
+                            <li>각종 SNS(카카오톡, 네이버밴드) 활용 홍보</li>
+                        </ul>
+                    </li>
+                    <li>공공기관 특판 행사
+                        <ul>
+                            <li>공기업 대상 선물세트 공급</li>
+                            <li>공공기관 방문 로컬푸드 농산물 직거래 행사</li>
+                            <li>구내식당 식자재 공급</li>
+                        </ul>
+
+                    </li>
+                </ol>
+            </div>
+            <img id="special" src="img/localfood01.jpg" width="250" height="250">
+        </div>
+    </div>
+    
+</body>
+</html>

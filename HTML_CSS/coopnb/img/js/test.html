@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Example: using document.getElementsByName</title>
+</head>
+
+<body>
+    <form action="#">
+        aa<input type="text" name="up" value="1" />
+        bb<input type="text" name="up" value="2" />
+        <button  name="a" value="+" onclick="aa()">+</button>
+        <button  name="a" value="-" onclick="aa()">-</button>
+    </form>
+</body>
+<script>
+
+    function aa() {
+        var a = document.getElementsByName("up")[0].value;
+        var b = document.getElementsByName("up")[1].value;
+        var op = document.getElementsByName("a").value;
+        console.log(op[0]);
+        if(op[0]  == "+"){
+            console.log("더하기"+a+b);
+        }else if(op[1] == "-") {
+            console.log("빼기"+b+a);
+        }
+    }
+
+</script>
+
+</html>

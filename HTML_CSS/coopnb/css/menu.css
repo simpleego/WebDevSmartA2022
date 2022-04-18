@@ -1,0 +1,33 @@
+ul {
+    list-style-type: none;
+}
+#menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#menu li {
+    float: left;
+    width: 120px;
+    background-color: rgb(7, 154, 21);
+    text-align: center;
+    border-radius: 10px;
+    border-right: 2px solid rgb(253, 253, 253);            
+}
+#menu li:last-child{
+    border-right: none;
+}
+
+#menu li a{
+    display: block;
+    padding: 20px 5px;
+    color: white;
+    text-decoration: none;
+    
+}
+#menu li a:hover:not(.active){
+    background-color: rgb(3, 250, 3);
+    color: rgb(25, 49, 1);
+    font-weight: bold;
+    border-radius: 10px;
+}

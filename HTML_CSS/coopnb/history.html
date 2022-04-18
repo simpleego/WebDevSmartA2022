@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /*border: 1px solid #f00;*/
+        }
+
+        #wrap {
+            width: 1000px;
+            height: 1000px;
+            margin: 0px auto;
+            padding: 20px;            
+            background-image: url("img/bg_intro.jpg");
+        }
+
+
+        body {
+            font-family: "Lato", sans-serif;
+        }
+
+        /* Style the tab */
+        .tab {
+            float: left;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+            width: 30%;
+            height: 300px;
+        }
+
+        /* Style the buttons inside the tab */
+        .tab button {
+            display: block;
+            background-color: inherit;
+            color: black;
+            padding: 22px 16px;
+            width: 100%;
+            border: none;
+            outline: none;
+            text-align: left;
+            cursor: pointer;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        /* Create an active/current "tab button" class */
+        .tab button.active {
+            background-color: #ccc;
+        }
+
+        /* Style the tab content */
+        .tabcontent {
+            float: left;
+            padding: 0px 12px;
+            border: 1px solid #ccc;
+            width: 70%;
+            border-left: none;
+            height: 300px;
+        }
+
+        .tabcontent ul {
+            margin-left: 20px;
+            list-style-type: none;
+        }
+
+        .tabcontent ul li {
+            padding-left: 20px;
+        }
+        .tabcontent ul  p {
+            padding-left: 20px;
+            font-weight: bolder;
+        }       
+    h1 {
+        margin-top: 80px;
+    } 
+
+    p {
+        margin: 20px;
+        font-weight: bolder;
+    }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/menu.css">
+    <title>히스토리</title>
+</head>
+
+<body>
+    <div id="wrap">
+        <ul id="menu">
+            <li><a href="intro.html">농부장터 소개</a></li>
+            <li><a href="local_food.html">직매장 운영</a></li>
+            <li><a href="local_food_operation.html">식당 운영</a></li>
+            <li><a href="network_business.html">네트워크 사업</a></li>
+            <li><a href="education_business.html">교육 사업</a></li>
+            <li><a href="member_join.html">조합원 정보</a></li>
+            <li><a href="history.html">농부장터 역사</a></li>
+            <li><a href="road_info.html">찾아오시는 길</a></li>
+        </ul>
+
+        <h1>걸어온 역사</h1>
+        <p>협동조합 농부장터가 걸어온 발자취를 소개합니다.</p>
+
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, '2019')" id="defaultOpen">2019</button>
+            <button class="tablinks" onclick="openCity(event, '2018')">2018</button>
+            <button class="tablinks" onclick="openCity(event, '2017')">2017</button>
+        </div>
+
+        <div id="2019" class="tabcontent">
+            <h3>▣ 2019</h3>
+            <ul>
+                <li><p>12.26</p>
+                    <ul>
+                        <li>2018년 우수 농산물 직거래사업장인증(제 2018-009호)</li>
+                    </ul>
+                </li>
+                <li><p>80.01</p>
+                    <ul>
+                        <li>대구디지털산업진흥원 내 로컬푸드 식당 두레비앙 개업(공공기관 협력 사업)
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div id="2018" class="tabcontent">
+            <h3>▣ 2018</h3>
+            <ul>
+                <li><p>12.26</p>
+                    <ul>
+                        <li>2018년 우수 농산물 직거래사업장인증(제 2018-009호)</li>
+                    </ul>
+                </li>
+                <li><p>1024</p>
+                    <ul>
+                        <li>19차 정기이사회
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+
+        <div id="2017" class="tabcontent">
+            <h3>▣ 2017</h3>
+            <ul>
+                <li><p>12.31</p>
+                    <ul>
+                        <li>2018년 우수 농산물 직거래사업장인증(제 2018-009호)</li>
+                    </ul>
+                </li>
+                <li><p>1024</p>
+                    <ul>
+                        <li>19차 정기이사회
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+
+        <script>
+            function openCity(evt, cityName) {
+                var i, tabcontent, tablinks;
+                //console.log(cityName);
+                //console.log(evt);
+                tabcontent = document.getElementsByClassName("tabcontent");
+                //console.log(tabcontent);
+
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(cityName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+
+            // Get the element with id="defaultOpen" and click on it
+            document.getElementById("defaultOpen").click();
+        </script>
+
+
+    </div>
+
+
+
+</body>
+
+</html>

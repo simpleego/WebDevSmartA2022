@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        * {
+            /*border: 1px solid #f00;*/
+        }
+
+        input {
+            display: inline;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Radio Buttons</h2>
+    <p>Choose your favorite Web language:</p>
+    <form>...
+          <input type="radio" checked id="html" name="fav_language" value="HTML">
+          <label for="html">HTML</label><br>
+          <input type="radio" id="css" name="fav_language" value="CSS">
+          <label for="css">CSS</label><br>
+          <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+          <label for="javascript">JavaScript</label><br>
+
+          <input type="radio" id="java" name="fav_language" value="Java">
+          <label for="java">Java</label>
+    </form>
+
+    <form>
+        <p>당신의 취미는 ?</p>
+        <input type="radio" id="a" name="fav_language" value="Java">
+          <label for="a">등산</label>
+        <input type="radio" id="b" name="fav_language" value="Java">
+          <label for="b">낚시</label>
+    </form>
+
+    <h2>Checkboxes</h2>
+    <p>The <strong>input type="checkbox"</strong> defines a checkbox:</p>
+
+    <form action="/action_page.php">
+        <input type="checkbox"  checked id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" checked id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> I have a boat</label><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2 style="color: rgba(63, 132, 155, 0.419);">The select Element</h2>
+
+<p>The select element defines a drop-down list:</p>
+
+<form action="/action_page.php">
+  <label for="cars">Choose a car:</label>
+  <select id="cars" name="cars" size="2">
+    <option value="volvo" >Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat" selected>Fiat</option>
+    <option value="audi">Audi</option>
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select>
+  <input type="submit">
+</form>
+
+<h2>Textarea</h2>
+<p>The textarea element defines a multi-line input field.</p>
+
+<form action="/action_page.php">
+  <textarea name="message" rows="10" cols="30">The cat was playing in the garden.</textarea>
+  <br><br>
+  <input type="submit">
+</form>
+
+<form>
+    <input type="text" value="값을 변경할 수 없습니다" disabled>
+
+</form>
+
+
+</body>
+
+</html>
