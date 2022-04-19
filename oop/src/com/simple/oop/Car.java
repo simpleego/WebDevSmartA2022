@@ -1,90 +1,41 @@
 package com.simple.oop;
 
-public class Car {	
-	private String licensePlate;
-	private double speed;
-	private double maxSpeed;
-	
-	public Car() {
-		this.licensePlate="";
-		this.speed=0.0;
-		this.maxSpeed=200.0;		
-	}
-	
-	public Car(String licensePlate, double maxSpeed) {
-		this.licensePlate = licensePlate;
-		if(maxSpeed > 0 ) this.maxSpeed = maxSpeed;
-		else this.maxSpeed = 200.0;
-		this.speed = 0.0;
-	}
-	
-	public Car(String licensePlate, double speed, double maxSpeed) {
-		this.licensePlate = licensePlate;
-		
-		if(speed < maxSpeed) this.speed = speed;
-		else speed =  0.0;
-		
-		if(maxSpeed > 0 ) this.maxSpeed = maxSpeed;
-		else this.maxSpeed = 200.0;
-	}
+public class Car {
+	private String model;
+    private String color;
+    private int speed;
 
-	public double getSpeed() {
-		return speed;
-	}
+     // 자동차의 시리얼 번호
+    private String serialNumber;
+    private static int numbers = 0;
+    private static final String MODEL = "KIA5";
 
-	public void setSpeed(double speed) {
-		this.speed = speed;
-	}
-
-	public void setLicensePlate(String licensePlate) {
-		this.licensePlate = licensePlate;
-	}	
-	
-	
-	public String getLicensePlate() {
-		return licensePlate;
-	}
-
-
-	public double getMaxSpeed() {
-		return maxSpeed;
-	}
-
-
-	public void setMaxSpeed(double maxSpeed) {
-		if(maxSpeed > 0)
-			this.maxSpeed = maxSpeed;
-		else 
-			this.maxSpeed = 0.0;
-	}
-	// 엑셀을 최대로 밟기
-	public void floorlt() {
-		speed = maxSpeed;		
-	}
-	
-	public boolean isSpeeding() {
-		double excess;
-		excess = this.maxSpeed - this.speed;
-		if(excess < 0) return true;
-		else return false;
-	}
-	
-	public void accelerate(double deltaV) {
-		this.speed = this.speed + deltaV;
-		if(this.speed > this.maxSpeed) {
-			this.speed = this.maxSpeed;
-		}
-		
-		if(this.speed < 0.0) {
-			this.speed  = 0.0;
-		}
-	}
-
-	@Override
+    public Car(String m, String c, int s) {
+          model = m;
+          color = c;
+          speed = s;
+           // 자동차의 개수를 증가하고 id에 대입한다. 
+          serialNumber =  MODEL +"-" + (++numbers) ;          
+    }
+    
+    @Override
 	public String toString() {
-		return "Car [번호판 :" + licensePlate + ", 속도 :" + speed + ", 최고속도 :" + maxSpeed + "]";
+		return "Car [model=" + model + ", color=" + color + ", speed=" + speed + ", serialNumber=" + serialNumber + "]";
 	}
-	
+
+
+
+	public static void main(String[] args) {
+    	Car c1 = new Car("S600", "white", 80); 	// 첫 번째 생성자 호출
+        Car c2 = new Car("E500", "blue", 20); 	// 첫 번째 생성자 호출
+        
+        System.out.println("생성된 자동차 : " + c1);
+        System.out.println("생성된 자동차 : " + c2);
+        
+        int n = Car.numbers;	// 정적 변수 
+        System.out.println("지금까지 생성된 자동차 수 = " + n);
+
+	}
+
+
 }
-
-

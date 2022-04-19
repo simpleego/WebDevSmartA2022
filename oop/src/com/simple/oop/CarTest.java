@@ -3,10 +3,10 @@ package com.simple.oop;
 public class CarTest {
 
 	public static void main(String[] args) {
-		Car c1 , c2, c3;
-		c1 = new Car("대구23더2137",200.0);
-		c2 = new Car();
-		c3 = new Car("서울02-2345", 20.5, 500.0);		
+		Car0 c1 , c2, c3;
+		c1 = new Car0("대구23더2137",200.0);
+		c2 = new Car0();
+		c3 = new Car0("서울02-2345", 20.5, 500.0);		
 		
 		System.out.println(c1);
 		System.out.println(c2);
