@@ -29,11 +29,13 @@ public class Student extends Person {
 	}
 	
 	public static void main(String[] args) {
-		Person p;
-		Student s = new Student("ȫ�浿");
+		//Person p;
+		//Student s = new Student("ȫ�浿");
+		Person p = new Student("ȫ�浿");
+		Student s = (Student)p;
 		s.set();
 		s.show();
-		p = (Person)s;
+		//p = (Person)s;
 		System.out.println(p.age);
 		p.setWeight(100);
 		System.out.println(p.getWeight());		
